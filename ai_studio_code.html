@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar for Selection -->
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <label for="companySelect">Select Company:</label>
+            <select id="companySelect">
+                <option value="companyA">Company A</option>
+                <option value="companyB">Company B</option>
+                <option value="companyC">Company C</option>
+            </select>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1>Sales Performance Comparison</h1>
+            </header>
+            
+            <!-- Comparison Chart Container -->
+            <div class="chart-card">
+                <canvas id="salesComparisonChart"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
